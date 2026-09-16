@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>pl.maurycy.darof</string>
+    <string>com.maurycy.darof</string>
     <key>ProgramArguments</key>
     <array>
         <string>/Users/maurycy/.local/bin/darof</string>
