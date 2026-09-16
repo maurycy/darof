@@ -25,14 +25,14 @@ darof --all      # apply to all disks, not only external
 ## Run at login
 
 ```
-cp pl.maurycy.darof.plist ~/Library/LaunchAgents/
-launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/pl.maurycy.darof.plist
+cp com.maurycy.darof.plist ~/Library/LaunchAgents/
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.maurycy.darof.plist
 ```
 
 Stop:
 
 ```
-launchctl bootout gui/$(id -u)/pl.maurycy.darof
+launchctl bootout gui/$(id -u)/com.maurycy.darof
 ```
 
 The agent starts again at next login. Remove the plist to disable it permanently.

@@ -88,7 +88,7 @@ int main(int argc, char **argv)
         CFDictionarySetValue(match, kDADiskDescriptionDeviceInternalKey, kCFBooleanFalse);
     }
 
-    log_queue = dispatch_queue_create("pl.maurycy.darof.log", DISPATCH_QUEUE_SERIAL);
+    log_queue = dispatch_queue_create("com.maurycy.darof.log", DISPATCH_QUEUE_SERIAL);
     log_slots = dispatch_semaphore_create(64);
     if (!log_queue || !log_slots) {
         fprintf(stderr, "darof: cannot initialize logging\n");
